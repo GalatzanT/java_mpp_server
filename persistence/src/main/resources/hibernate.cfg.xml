@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "https://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- JDBC connection settings -->
+        <property name="hibernate.connection.driver_class">org.sqlite.JDBC</property>
+        <property name="hibernate.connection.url">jdbc:sqlite:D:\\basket.db</property>
+
+        <!-- Dialect -->
+        <property name="hibernate.dialect">org.hibernate.community.dialect.SQLiteDialect</property>
+
+        <!-- Schema auto-update -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- SQL logging -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+
+        <!-- Annotated entity classes -->
+        <mapping class="model.Worker"/>
+        <mapping class="model.Client"/>
+        <mapping class="model.Ticket"/>
+        <mapping class="model.Match"/>
+
+    </session-factory>
+</hibernate-configuration>

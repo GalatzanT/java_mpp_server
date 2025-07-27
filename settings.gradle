@@ -4,4 +4,8 @@ include 'persistence'
 include 'services'
 include 'networking'
 include 'server'
+include 'ONEclient'
+include 'TWOClient'
+include 'RestServices'
+include 'Rest'
 

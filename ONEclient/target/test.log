@@ -1,0 +1,6 @@
+2025-05-19 10:14:42 DEBUG tudor.oneclient.StartJsonClientFX 28 start - In start
+2025-05-19 10:14:42 INFO  tudor.oneclient.StartJsonClientFX 32 start - Client properties set {chat.server.port=55556, chat.server.host=localhost} 
+2025-05-19 10:14:42 INFO  tudor.oneclient.StartJsonClientFX 48 start - Using server IP localhost
+2025-05-19 10:14:42 INFO  tudor.oneclient.StartJsonClientFX 49 start - Using server port 55556
+2025-05-19 10:14:47 INFO  tudor.oneclient.LoginController 51 pressLogin - Login button pressed
+2025-05-19 10:14:47 INFO  networking.jsonprotocol.ServiceRPCPRoxy 51 login - Login started

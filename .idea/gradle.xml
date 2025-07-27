@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/ONEclient" />
+            <option value="$PROJECT_DIR$/Rest" />
+            <option value="$PROJECT_DIR$/RestServices" />
+            <option value="$PROJECT_DIR$/TWOClient" />
             <option value="$PROJECT_DIR$/model" />
             <option value="$PROJECT_DIR$/networking" />
             <option value="$PROJECT_DIR$/persistence" />
@@ -17,10 +21,10 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/client" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ClientWeb" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/client" />
+            <option value="$PROJECT_DIR$/ClientWeb" />
           </set>
         </option>
       </GradleProjectSettings>

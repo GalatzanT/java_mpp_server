@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+ <!--        onAction="#handleLogout"  onAction="#handleBuyTickets"
+ onAction="#handleSearchOrders" onAction="#handleSearchOrdersEmail"-->
+<AnchorPane  xmlns="http://javafx.com/javafx"
+             fx:id="rootPane"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="tudor.twoclient.HomeController"
+            prefWidth="670.0" prefHeight="680.0">
+
+    <HBox spacing="30"
+          AnchorPane.topAnchor="20.0"
+          AnchorPane.leftAnchor="20.0"
+          AnchorPane.rightAnchor="20.0"
+          AnchorPane.bottomAnchor="20.0"
+          alignment="CENTER">
+
+        <padding>
+            <Insets top="20" right="20" bottom="20" left="20"/>
+        </padding>
+
+        <!-- VBox pentru lista de meciuri -->
+        <VBox spacing="20" alignment="TOP_CENTER" HBox.hgrow="ALWAYS">
+            <Label text="Available Matches" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+            <ListView fx:id="matchListView" prefHeight="200.0"  />
+            <Button text="Logout" onAction="#logout" />
+        </VBox>
+
+        <!-- VBox pentru cumpărare bilete -->
+        <VBox spacing="10" alignment="TOP_LEFT" HBox.hgrow="ALWAYS">
+            <Label text="Client Name:"/>
+            <TextField fx:id="clientName"/>
+            <Label text="Client Address:"/>
+            <TextField fx:id="clientAddress"/>
+            <Label text="Number of Tickets:"/>
+            <TextField fx:id="numberOfTickets"/>
+            <Button fx:id="buyTickets" text="Submit Command" onAction="#handleBuyTickets"/>
+        </VBox>
+
+    </HBox>
+
+    <!-- VBox pentru căutare comenzi client -->
+    <VBox spacing="10.0" alignment="CENTER_LEFT"
+          AnchorPane.leftAnchor="100.0"
+          AnchorPane.rightAnchor="100.0"
+          AnchorPane.bottomAnchor="20.0">
+        <Label text="Search Client Orders" style="-fx-font-weight: bold;" />
+        <TextField fx:id="searchClientField" promptText="Enter client name" />
+        <Button fx:id="searchButton" text="Search by name" onAction="#handleSearchOrders" />
+        <Button fx:id="searchButtonEmail" text="Search by adress" onAction="#handleSearchOrdersEmail" />
+        <ListView fx:id="ticketListView" prefHeight="150.0" VBox.vgrow="ALWAYS"/>
+    </VBox>
+
+</AnchorPane>
